@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-81KDK8DP0F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-81KDK8DP0F");
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Landchain</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      (function (d, t, u, s, c, f) {
+        f = function (m) {
+          m = new Date();
+          return (
+            m.getFullYear() +
+            "" +
+            (m.getMonth() + 1) +
+            "" +
+            m.getDate() +
+            "T" +
+            m.getHours() +
+            "" +
+            m.getMinutes() +
+            "" +
+            m.getSeconds()
+          );
+        };
+        u =
+          "https://widgets-static.embluemail.com/accounts/1684364A3692F8614B/scripts/sw_16843.js?ts=" +
+          f();
+        s = d.createElement(t);
+        s.async = 1;
+        s.src = u;
+        c = d.getElementsByTagName(t)[0];
+        c.parentNode.insertBefore(s, c);
+      })(document, "script");
+    </script>
+  </body>
+</html>
